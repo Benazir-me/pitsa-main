@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    background-image: url("./../../images/pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+* ::after, *::before{
+            box-sizing: inherit;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}

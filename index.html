@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Pitsa buyurtma qilish</title>
+  </head>
+
+  <body>
+    <h1 class="title-side">Pitsa buyurtma qilish🍕</h1>
+    <div class="pitsa">
+      <!-- ! Start left side  -->
+      <div class="pitsa__left">
+        <input type="text" name="name"         id="name" placeholder="Ismingiz :" required />
+        <input
+          type="text"
+          name="surname"
+          placeholder="Familyangiz :"
+          required
+          id="surnameInput"
+        />
+        <input
+          type="address"
+          name="address"
+          placeholder="Turar joyingiz :"
+          id="addressInput"
+
+          required
+        />
+        <h2 class="pitsa__left__heading1">Noni qanday bo'sin?</h2>
+        <select name="pitsa-select" id="pitsa-select">
+          <option value="tanlang" disabled selected>Tanlang</option>
+          <option value="yupqa">Yupqa</option>
+          <option value="qalin">Qalin</option>
+        </select>
+
+        <h2 class="pitsa__left__heading2">Kattaligi</h2>
+
+        <div class="pitsa__left__wrap-size">
+          <!-- <input class="activ-size" type="radio" name="contact" id="size" value="25">
+                <label for="size"> 25sm</label>
+                <input class="activ-size" type="radio" name="contact" id="size2" value="30">
+                <label for="size2"> 30sm </label>
+                <input class="activ-size" type="radio" name="contact" id="size3" value="35">
+                <label for="size3"> 35sm</label> -->
+
+          <button
+            value="25sm"
+            id="wrap-size-1"
+            class="pitsa__left__wrap-size__1 active_round"
+          >
+            25sm
+          </button>
+          <button
+            value="30sm"
+            id="wrap-size-2"
+            class="pitsa__left__wrap-size__2 active_round"
+          >
+            30sm
+          </button>
+          <button
+            value="35sm"
+            id="wrap-size-3"
+            class="pitsa__left__wrap-size__3 active_round"
+          >
+            35sm
+          </button>
+        </div>
+
+        <h2 class="pitsa__left__heading3">Ustiga nima solaylik?</h2>
+        <div class="pitsa__left__wrap-things">
+          <div class="pitsa__left__wrap-things__wrap">
+            <input
+              class="active-ust"
+              type="checkbox"
+              name="pomidor"
+              id="pomidor"
+              value="Pomidor;"
+            />
+            <label for="pomidor">Pomidor</label>
+          </div>
+
+          <div class="pitsa__left__wrap-things__wrap">
+            <input
+              class="active-ust"
+              type="checkbox"
+              name="kurka"
+              id="kurka"
+              value="Kurka go'shti;"
+            />
+            <label for="kurka">Kurka go'shti</label>
+          </div>
+
+          <div class="pitsa__left__wrap-things__wrap">
+            <input
+              class="active-ust"
+              type="checkbox"
+              name="zaytun"
+              id="zaytun"
+              value="Zaytun;"
+            />
+            <label for="zaytun">Zaytun</label>
+          </div>
+          <div class="pitsa__left__wrap-things__wrap">
+            <input
+              class="active-ust"
+              type="checkbox"
+              name="bodring"
+              id="bodring"
+              value="Tuzlangan bodring;"
+            />
+            <label for="bodring">Tuzlangan bodring</label>
+          </div>
+
+          <div class="pitsa__left__wrap-things__wrap">
+            <input
+              class="active-ust"
+              type="checkbox"
+              name="qo'ziqorin"
+              id="qo'ziqorin"
+              value="Qo'ziqorin;"
+            />
+            <label for="qo'ziqorin">Qo'ziqorin</label>
+          </div>
+
+          <div class="pitsa__left__wrap-things__wrap">
+            <input
+              class="active-ust"
+              type="checkbox"
+              name="qazi"
+              id="qazi"
+              value="Qazi;"
+            />
+            <label for="qazi">Qazi</label>
+          </div>
+          <div
+            class="d-flex flex-wrap form-group form-check ingredient-wrapper"
+          ></div>
+        </div>
+
+        <h2 class="pitsa__left__heading4">Qo'shimchalar</h2>
+        <div class="pitsa__left__wrap-complete">
+          <input
+            class="activ-qosh"
+            type="checkbox"
+            name="achchiq"
+            id="achchiq"
+            value="Achchiq;"
+          />
+          <label id="achchiq" for="achchiq">Achchiq</label>
+
+          <input
+            class="activ-qosh"
+            type="checkbox"
+            name="sosiskali"
+            id="sosiskali"
+            value="Sosiskali;"
+          />
+          <label for="sosiskali">Sosiskali</label>
+        </div>
+      </div>
+      <!-- ! End of left side -->
+
+      <!-- ! Start right side  -->
+      <div class="pitsa__right">
+        <p class="pitsa__right__text1">
+          <b>Noni</b>:
+          <span class="span-noni"></span>
+        </p>
+        <p class="pitsa__right__text2">
+          <b>Kattaligi</b>:
+          <span class="span-kota"></span>
+        </p>
+        <p class="pitsa__right__text3">
+          <b>Ustida</b>:
+          <span class="span-ust"></span>
+          <span class="span-ust"></span>
+          <span class="span-ust"></span>
+          <span class="span-ust"></span>
+          <span class="span-ust"></span>
+          <span class="span-ust"></span>
+        </p>
+        <p class="pitsa__right__text4">
+          <b>Qo'shimcha</b>:
+          <span class="span-qoshim"></span>
+          <span class="span-qoshim"></span>
+        </p>
+
+        <!-- <button class="pitsa__right__btn">Buyurtma berish</button> -->
+
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary pitsa__right__btn"
+          id="orderbutton"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Buyurtma berish
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Buyurtmangiz qabul qilindi✅
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close active-x"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+
+              </div>
+              <div class="Success_Contact">
+                <span id="Surname"></span>  <span id="Name"></span>
+                <div class="add-success">
+                  <p>Region:</p>
+                <span id="region"> </span>
+                </div>
+                <div class="add-success">
+                  <p>Noni:</p>
+                <span id="select-bread"></span>
+                </div>
+                <div class="add-success">
+                  <p>Kattalgi:</p>
+                <span id="pisa-size"></span>
+                </div>
+                  <div class="add-success">
+                    <p>Ustida:</p>
+                    <span id="pisa-material"></span>
+                    <span id="pisa-material"></span>
+                    <span id="pisa-material"></span>
+                    <span id="pisa-material"></span>
+                    <span id="pisa-material"></span>
+                  <span id="pisa-material"></span>
+                  </div>
+
+                <div class="add-success">
+                  <p>Qo'shimcha:</p>
+                  <span id="pisa-additions"></span>
+                  <span id="pisa-additions"></span>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ! End of right side -->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
